@@ -1,0 +1,8 @@
+{
+  "name": "gitbook-plugin-download-chapter",
+  "version": "0.0.3",
+  "description": "download chapter pdf",
+  "engines": {
+    "gitbook": ">3.0.0"
+  }
+}
