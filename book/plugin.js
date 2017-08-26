@@ -7,7 +7,9 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
         var bookpage = gitbook.page.getState()
         var bookroot = bookpage.bookRoot
         var filepath = bookpage.filepath
-        window.open(bookroot+filepath.substring(0,filepath.lastIndexOf(".md")) + ".pdf")
+        if (!filepath.toLowerCase().endsWith('readme.md')) {
+          window.open(bookroot+filepath.substring(0,filepath.lastIndexOf(".md")) + ".pdf")
+        }
       }
     })
   })
